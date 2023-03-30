@@ -27,7 +27,7 @@ session_start();
                 &nbsp;</p>
             <hr>
             <div class="d-grid gap-2">
-                <a href="page.php" type="button" name="" id="" class="btn btn-primary">เอกสารชี้แจงในการตอบแบบสำรวจ</a>
+                <a href="detail.php" type="button" name="" id="" class="btn btn-primary">เอกสารชี้แจงในการตอบแบบสำรวจ</a>
             </div>
         </div>
     </div>
