@@ -426,7 +426,7 @@ include '../session/sessionuser.php';
             </form>
 
             <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-            <script src="../jsStudent/jspage2.js"></script>
+            <script src="../jsStudent_s/jspage2.js"></script>
 
 
 

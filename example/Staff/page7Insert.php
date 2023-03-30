@@ -15,22 +15,24 @@ $_SESSION["page7_array"] = $page7_array;
 //     echo $page7 . "<br>";
 // }
 // header("Location: page8.php");
+include './function/staffNumText.php';
+
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';
     $numS = "Very Unhappy= 0.00-24.00 คะแนน";
-    $textS = "หมายถึง ระดับความสุขที่สะท้อนให้เห็นผลที่ได้ว่าอยู่ในขั้นต่ำกว่าเป้าหมายมากที่สุด เป็นสัญญาณระบุให้ผู้บริหารต้องให้การส่งเสริมสนับสนุนองค์กรแห่งความสุขทันที";
+    $textS = $staffNumText1;
 } elseif ($sumDataAll >= 25.00 and $sumDataAll <= 49.99) {
     $imgS = '<img src="../imgS/s2.png">';
     $numS = "Unhappy= 25.00-49.99 คะแนน";
-    $textS = "หมายถึง ระดับความสุขที่สะท้อนให้เห็นผลที่ได้ว่าอยู่ในขั้นต่ำกว่าเป้าหมาย เป็นสัญญาณระบุให้ผู้บริหารต้องให้การพัฒนาสนับสนุนองค์กรแห่งความสุขอย่างจริงจัง";
+    $textS = $staffNumText2;
 } elseif ($sumDataAll >= 50.00 and $sumDataAll <= 74.99) {
     $imgS = '<img src="../imgS/s3.png">';
     $numS = "Happy= 50.00-74.99 คะแนน";
-    $textS = "หมายถึง ระดับความสุขที่สะท้อนให้เห็นผลที่ได้ว่าอยู่ในขั้นตามเป้าหมาย เป็นสัญญาณว่าผู้บริหารควรให้การพัฒนาสนับสนุนองค์กรแห่งความสุขต่อไป";
+    $textS = $staffNumText3;
 } elseif ($sumDataAll >= 75.00 and $sumDataAll <= 100) {
     $imgS = '<img src="../imgS/s3.png">';
     $numS = "Very Happy= 75.0-100 คะแนน";
-    $textS = "หมายถึง ระดับความสุขที่สะท้อนให้เห็นผลที่ได้ว่าอยู่ในขั้นเกินเป้าหมาย เป็นสัญญาณว่าผู้บริหารควรให้การพัฒนาสนับสนุนองค์กรแห่งความสุขต่อไปและยกย่องเป็นแบบอย่าง";
+    $textS = $staffNumText4;
 }
 
 ?>

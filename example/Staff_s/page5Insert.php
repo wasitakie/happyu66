@@ -1,7 +1,7 @@
 <?php
 session_start();
 //4//
-$page5_array = array("", $_POST["q25"], $_POST["q26"], $_POST["q27"], $_POST["cv5"]);
+$page5_array = array("", $_POST["q25"], $_POST["q26"], $_POST["q27"]);
 
 $sumData = array('', '0', '18', '50', '75', '100');
 

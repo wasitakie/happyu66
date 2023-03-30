@@ -129,7 +129,7 @@ $(".btnsub").submit(function () {
     $("#checkcv9-1").focus();
     return false;
   }
-  var status = confirm("ok");
+  var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;
   } else {

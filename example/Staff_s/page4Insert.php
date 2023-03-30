@@ -1,7 +1,7 @@
 <?php
 session_start();
 //6//
-$page4_array = array("", $_POST["q20"], $_POST["q21"], $_POST["q22"], $_POST["q23"], $_POST["q24"], $_POST["cv4"]);
+$page4_array = array("", $_POST["q20"], $_POST["q21"], $_POST["q22"], $_POST["q23"], $_POST["q24"]);
 
 $sumData = array('', '0', '18', '50', '75', '100');
 

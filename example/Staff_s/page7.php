@@ -150,7 +150,7 @@ session_start()
             </form>
 
             <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-            <script src="../jsStaff/jspage7.js"></script>
+            <script src="../jsStaff_s/jspage7.js"></script>
         </div>
     </div>
     <?php include '../title/footer.php' ?>

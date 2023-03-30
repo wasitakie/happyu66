@@ -222,7 +222,7 @@ include '../session/sessionuser.php';
                 </div>
 
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">บันทึกข้อมูล</button>
                 </div>
             </form>
             <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

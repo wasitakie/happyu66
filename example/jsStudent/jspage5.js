@@ -28,7 +28,7 @@ $(".btnsub").submit(function () {
     return false;
   }
 
-  var status = confirm("ok");
+  var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;
   } else {

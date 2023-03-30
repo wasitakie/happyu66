@@ -797,7 +797,7 @@ include '../session/sessionuser.php';
                     </div>
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">บันทึกข้อมูล</button>
                 </div>
             </form>
 

@@ -1,0 +1,37 @@
+$(".btnsub").submit(function () {
+  if ($(".q33:checked").length == "") {
+    alert(
+      "33. โดยรวมแล้วท่านรู้สึกว่ามีเวลาอยู่กับครอบครัวเพียงพอ มากน้อยเพียงใด"
+    );
+    $("#checkq33-1").focus();
+    return false;
+  }
+
+  if ($(".q34:checked").length == "") {
+    alert(
+      "34. โดยรวมแล้วท่านทำกิจกรรม (เช่น ออกกำลังกาย ทำบุญ ซื้อของ รับประทานอาหาร ท่องเที่ยว ฯลฯ)"
+    );
+    $("#checkq34-1").focus();
+    return false;
+  }
+  if ($(".q35:checked").length == "") {
+    alert("35. โดยรวมแล้วท่านรู้สึกว่ามีความสุขกับครอบครัวของท่านเพียงใด ");
+    $("#checkq35-1").focus();
+    return false;
+  }
+
+  if ($(".cv5:checked").length == "") {
+    alert(
+      "CV5.สถานการณ์การแพร่ระบาดโควิด-19 มีผลกระทบต่อภาพรวมในมิติครอบครัวดี ของท่าน"
+    );
+    $("#checkcv5-1").focus();
+    return false;
+  }
+
+  var status = confirm("ok");
+  if (status == false) {
+    return false;
+  } else {
+    return true;
+  }
+});

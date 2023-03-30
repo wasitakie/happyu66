@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["user"] = $idcode = md5("hapypy" . date("dmyHis"));
+?>
 <!DOCTYPE html>
 <html lang="en">
 

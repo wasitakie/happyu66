@@ -366,7 +366,7 @@ session_start()
                 </div>
             </form>
             <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-            <script src="../jsStaff/jspage1.js"></script>
+            <script src="../jsStaff_s/jspage1.js"></script>
 
 
 

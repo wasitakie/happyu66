@@ -187,7 +187,7 @@ include '../session/sessionuser.php';
                 </div>
             </form>
             <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-            <script src="../jsStudent/jspage8.js"></script>
+            <script src="../jsStudent_s/jspage8.js"></script>
 
 
 

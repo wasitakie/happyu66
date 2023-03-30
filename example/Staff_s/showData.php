@@ -129,7 +129,7 @@ $nm9 = number_format($_SESSION["sumNum9"], 2);
     } elseif ($nm10 >= '75.00' and $nm10 <= '100.00') {
         $img_nm10 = '<img src="../img/h.png">' . '<br>Very Happy';
     }
-    $nm10 = number_format(($nm1 + $nm2 + $nm4 + $nm5 + $nm6 + $nm7 + $nm8 + $nm9) / 9, 2);
+    $nm10 = number_format(($nm1 + $nm2 + $nm4 + $nm5 + $nm6 + $nm7 + $nm8) / 8, 2);
 
     $sex = $_SESSION["page_array"][1];
     $hi = $_SESSION["page1_array"][3] / 100;
@@ -235,7 +235,6 @@ $nm9 = number_format($_SESSION["sumNum9"], 2);
                         <td>สังคมดี</td>
                         <td>ใฝ่รู้ดี</td>
                         <td>สุขภาพเงินดี</td>
-                        <td>การงานดี</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -247,7 +246,6 @@ $nm9 = number_format($_SESSION["sumNum9"], 2);
                         <td><?= $nm6 ?></td>
                         <td><?= $nm7 ?></td>
                         <td><?= $nm8 ?></td>
-                        <td><?= $nm9 ?></td>
                         <td><?= $nm10 ?></td>
                     </tr>
                     <tr class="textHappy">
@@ -259,7 +257,6 @@ $nm9 = number_format($_SESSION["sumNum9"], 2);
                         <td><?= $img_nm6; ?></td>
                         <td><?= $img_nm7; ?></td>
                         <td><?= $img_nm8; ?></td>
-                        <td><?= $img_nm9 ?></td>
                         <td><?= $img_nm10; ?></td>
                     </tr>
                 </tbody>
@@ -275,12 +272,12 @@ $nm9 = number_format($_SESSION["sumNum9"], 2);
             "type": "radar",
             "data": {
                 "labels": ['สุขภาพดี', 'ผ่อนคลายดี', 'น้ำใจดี', 'จิตวิญญาณดี', 'ครอบครัวดี', 'สังคมดี',
-                    'ใฝ่รู้ดี', 'สุขภาพเงินดี', 'การงานดี'
+                    'ใฝ่รู้ดี', 'สุขภาพเงินดี'
                 ],
                 "datasets": [{
                     "label": "ค่าคะแนนเฉลี่ยความสุขรายมิติ",
                     "data": [<?= $nm1 ?>, <?= $nm2 ?>, <?= $nm3 ?>, <?= $nm4 ?>, <?= $nm5 ?>,
-                        <?= $nm6 ?>, <?= $nm7 ?>, <?= $nm8 ?>, <?= $nm9 ?>
+                        <?= $nm6 ?>, <?= $nm7 ?>, <?= $nm8 ?>
                     ],
                     "fill": true,
                     "backgroundColor": "rgba(255, 99, 132, 0.2)",
@@ -332,12 +329,12 @@ $nm9 = number_format($_SESSION["sumNum9"], 2);
             "type": "bar",
             "data": {
                 "labels": ['สุขภาพดี', 'ผ่อนคลายดี', 'น้ำใจดี', 'จิตวิญญาณดี', 'ครอบครัวดี', 'สังคมดี',
-                    'ใฝ่รู้ดี', 'สุขภาพเงินดี', 'การงานดี'
+                    'ใฝ่รู้ดี', 'สุขภาพเงินดี'
                 ],
                 "datasets": [{
                     "label": "ค่าคะแนนเฉลี่ยความสุขรายมิติ",
                     "data": [<?= $nm1 ?>, <?= $nm2 ?>, <?= $nm3 ?>, <?= $nm4 ?>, <?= $nm5 ?>,
-                        <?= $nm6 ?>, <?= $nm7 ?>, <?= $nm8 ?>, <?= $nm9 ?>
+                        <?= $nm6 ?>, <?= $nm7 ?>, <?= $nm8 ?>
                     ],
                     "fill": false,
                     "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
