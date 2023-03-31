@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-//10//
+//9//
 $page6_array = array("", $_POST["q36"], $_POST["q37"], $_POST["q38"], $_POST["q39"], $_POST["q40"], $_POST["q41"], $_POST["q42"], $_POST["q43"], $_POST["q44"]);
 
 $sumData = array('', '0', '25', '50', '75', '100');
 
-$sumDataAll = ($_POST["q36"] + $_POST["q37"] + $_POST["q38"] + $_POST["q39"] + $_POST["q40"] + $_POST["q41"] + $_POST["q42"] + $_POST["q43"] + $_POST["q44"] + $_POST["q45"]) / 9;
+$sumDataAll = ($_POST["q36"] + $_POST["q37"] + $_POST["q38"] + $_POST["q39"] + $_POST["q40"] + $_POST["q41"] + $_POST["q42"] + $_POST["q43"] + $_POST["q44"]) / 9;
 
 $_SESSION["sumNum6"] = $sumDataAll;
 $_SESSION["page6_array"] = $page6_array;

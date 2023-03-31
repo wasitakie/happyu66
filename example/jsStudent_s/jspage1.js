@@ -96,15 +96,8 @@ $(".btnsub").submit(function () {
     $("#checkq11-1").focus();
     return false;
   }
-  if ($(".cv1:checked").length == "") {
-    alert(
-      "CV1.สถานการณ์การแพร่ระบาดโควิด-19 มีผลกระทบต่อภาพรวมในมิติสุขภาพกายดีของท่านเพียงใด"
-    );
-    $("#checkcv1-1").focus();
-    return false;
-  }
 
-  var status = confirm("ok");
+  var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;
   } else {

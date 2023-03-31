@@ -33,14 +33,6 @@ $(".btnsub").submit(function () {
     return false;
   }
 
-  if ($(".cv6:checked").length == "") {
-    alert(
-      "CV6. สถานการณ์การแพร่ระบาดโควิด-19 มีผลกระทบต่อภาพรวมในมิติสังคมดี ของท่านเพียงใด"
-    );
-    $("#checkcv6-1").focus();
-    return false;
-  }
-
   var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;

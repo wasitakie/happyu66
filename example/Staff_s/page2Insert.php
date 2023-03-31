@@ -1,6 +1,6 @@
 <?php
 session_start();
-//6//
+//5//
 
 $page2_array = array("", $_POST["q10"], $_POST["q11"], $_POST["q12"], $_POST["q13"], $_POST["q14"]);
 

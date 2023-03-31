@@ -25,15 +25,7 @@ $(".btnsub").submit(function () {
     return false;
   }
 
-  if ($(".cv8:checked").length == "") {
-    alert(
-      "CV8.สถานการณ์การแพร่ระบาดโควิด-19 มีผลกระทบต่อภาพรวมในมิติสุขภาพเงินดีของท่านเพียงใด"
-    );
-    $("#checkcv8-1").focus();
-    return false;
-  }
-
-  var status = confirm("ok");
+  var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;
   } else {

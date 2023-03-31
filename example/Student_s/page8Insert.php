@@ -63,7 +63,7 @@ if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
                     <hr>
                     <div class="textS"><?= $textS ?></div>
                     <hr>
-                    <a name="" id="" class="btn btn-primary btn-block" href="insertData.php" role="button">ทำแบบสำรวจในส่วนต่อไป</a>
+                    <a name="" id="" class="btn btn-primary btn-block" href="insertData.php" role="button">สรุปผลแบบสำรวจ</a>
                 </div>
             </div>
             <div class="col-md-3"></div>

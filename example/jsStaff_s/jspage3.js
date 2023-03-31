@@ -28,14 +28,6 @@ $(".btnsub").submit(function () {
     return false;
   }
 
-  if ($(".cv3:checked").length == "") {
-    alert(
-      "CV3.สถานการณ์การแพร่ระบาดโควิด-19 มีผลกระทบต่อภาพรวมในมิติน้ำใจดของท่านเพียงใด"
-    );
-    $("#checkcv3-1").focus();
-    return false;
-  }
-
   var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;

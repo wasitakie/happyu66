@@ -41,15 +41,7 @@ $(".btnsub").submit(function () {
     return false;
   }
 
-  if ($(".cv4:checked").length == "") {
-    alert(
-      "CV4.สถานการณ์การแพร่ระบาดโควิด-19 มีผลกระทบต่อภาพรวมในมิติจิตวิญญาณดีของท่านเพียงใดของท่านเพียงใด"
-    );
-    $("#checkcv4-1").focus();
-    return false;
-  }
-
-  var status = confirm("ok");
+  var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;
   } else {

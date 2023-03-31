@@ -71,15 +71,7 @@ $(".btnsub").submit(function () {
     return false;
   }
 
-  if ($(".cv2:checked").length == "") {
-    alert(
-      "CV2.สถานการณ์การแพร่ระบาดโควิด-19 มีผลกระทบต่อภาพรวมในมิติผ่อนคลายดของท่านเพียงใด"
-    );
-    $("#checkcv2-1").focus();
-    return false;
-  }
-
-  var status = confirm("ok");
+  var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;
   } else {

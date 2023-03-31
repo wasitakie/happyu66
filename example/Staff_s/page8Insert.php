@@ -5,7 +5,7 @@ $page8_array = array("", $_POST["q37"], $_POST["q38"], $_POST["q39"], $_POST["q4
 
 $sumData = array('', '0', '18', '50', '75', '100');
 
-echo $sumDataAll = ($sumData[$_POST["q37"]] + $sumData[$_POST["q38"]] + $sumData[$_POST["q39"]] + $sumData[$_POST["q40"]]) / 4;
+$sumDataAll = ($sumData[$_POST["q37"]] + $sumData[$_POST["q38"]] + $sumData[$_POST["q39"]] + $sumData[$_POST["q40"]]) / 4;
 
 $_SESSION["sumNum8"] = $sumDataAll;
 $_SESSION["page8_array"] = $page8_array;
@@ -65,7 +65,7 @@ if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
                     <hr>
                     <div class="textS"><?= $textS ?></div>
                     <hr>
-                    <a name="" id="" class="btn btn-primary btn-block" href="page9.php" role="button">ทำแบบสำรวจในส่วนต่อไป</a>
+                    <a name="" id="" class="btn btn-primary btn-block" href="insertData.php" role="button">สรุปผลแบบสำรวจ</a>
                 </div>
             </div>
             <div class="col-md-3"></div>

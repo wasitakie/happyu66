@@ -1,6 +1,6 @@
 <?php
 session_start();
-// 12//
+// 11//
 $page1_array = array("", $_POST["weight"], $_POST["waist"], $_POST["height"], $_POST["q2"], $_POST["q3"], $_POST["q4"], $_POST["q5"], $_POST["q6"], $_POST["q7"], $_POST["q8"], $_POST["q9"]);
 
 $sumData = array('', '0', '25', '50', '75', '100');

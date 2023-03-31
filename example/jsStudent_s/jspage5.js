@@ -20,15 +20,7 @@ $(".btnsub").submit(function () {
     return false;
   }
 
-  if ($(".cv5:checked").length == "") {
-    alert(
-      "CV5.สถานการณ์การแพร่ระบาดโควิด-19 มีผลกระทบต่อภาพรวมในมิติครอบครัวดี ของท่าน"
-    );
-    $("#checkcv5-1").focus();
-    return false;
-  }
-
-  var status = confirm("ok");
+  var status = confirm("กรุณายืนยันการบันทึกข้อมูลอีกครั้ง");
   if (status == false) {
     return false;
   } else {

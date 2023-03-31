@@ -1,6 +1,6 @@
 <?php
 session_start();
-//6//
+//5//
 $page3_array = array("", $_POST["q22"], $_POST["q23"], $_POST["q24"], $_POST["q25"], $_POST["q26"]);
 
 $sumData = array('', '0', '25', '50', '75', '100');
