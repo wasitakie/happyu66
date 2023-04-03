@@ -24,12 +24,108 @@ include '../session/sessionuser.php';
                 <p>ให้ใส่เครื่องหมาย <i class="fa-solid fa-check"></i> ในช่อง <i class="fa-regular fa-square"></i>
                     ทุกข้อที่ท่านเลือก </p>
             </div>
-
-            <div class="headpage">
-                <h4>ส่วนที่ 2: ข้อมูลทั่วไป </h4>
-            </div>
-
             <form action="pageInsert.php" method="post" class="btnsub">
+
+
+                <div class="headpage">
+                    <h4>ส่วนที่ 1: ข้อมูลหน่วยงาน</h4>
+                </div>
+                <div class="box">
+                    <div class="question">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
+                                        1.1 ชื่อ มหาวิทยาลัย</span></label>
+                                <div class="form-check">
+                                    <label type="text" for="formGroupExampleInput" class="form-label"> มหาวิทยาลัยราชภัฏอุตรดิตถ์</label>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="question">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label type="text" for="formGroupExampleInput " class="form-label">
+                                    <span class="textQ">
+                                        1.2 ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย) </span></label>
+                                <select class="form-select a2" name="a2" aria-label="Default select example" id="a2">
+                                    <option value="0">ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)</option>
+                                    <option value="1.คณะเกษตรศาสตร์">1. คณะเกษตรศาสตร์</option>
+                                    <option value="2.คณะครุศาสตร์">2. คณะครุศาสตร์</option>
+                                    <option value="3.คณะเทคโนโลยีอุตสาหกรรม">3. คณะเทคโนโลยีอุตสาหกรรม</option>
+                                    <option value="4. คณะมนุษยศาสตร์และสังคมศาสตร์">4. คณะมนุษยศาสตร์และสังคมศาสตร์</option>
+                                    <option value="5.คณะวิทยาการจัดการ">5. คณะวิทยาการจัดการ</option>
+                                    <option value="6.คณะวิทยาศาสตร์และเทคโนโลยี">6. คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                                    <option value="7.วิทยาลัยนานาชาติ">7. วิทยาลัยนานาชาติ</option>
+                                    <option value="8.วิทยาลัยน่าน">8. วิทยาลัยน่าน</option>
+
+
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="box">
+                    <div class="question">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
+                                        1.3 โดยรวมแล้วท่านเข้าร่วมกิจกรรม/ชมรมต่าง ๆ ในมหาวิทยาลัย (กิจกรรมใดก็ได้ที่เป็นหรือไม่เป็นสมาชิก) บ่อยครั้งเพียงใด</span></label>
+                                <div class="form-check">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-1" value="1">
+                                    <label class="form-check-label" for="checka3-1">
+                                        1. ไม่เคยเข้าร่วมเลย
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-2" value="2">
+                                    <label class="form-check-label" for="checka3-2">
+                                        2. เข้าร่วมน้อยครั้ง
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-3" value="3">
+                                    <label class="form-check-label" for="checka3-3">
+                                        3.เข้าร่วมบางครั้ง/เท่าที่จำเป็น
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-4" value="4">
+                                    <label class="form-check-label" for="checka3-4">
+                                        4. เข้าร่วมบ่อยครั้ง
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-5" value="5">
+                                    <label class="form-check-label" for="checka3-5">
+                                        5. เข้าร่วมประจำ/ทุกครั้ง
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="headpage">
+                    <h4>ส่วนที่ 2: ข้อมูลทั่วไป </h4>
+                </div>
+
+
 
                 <div class="box">
                     <div class="question">

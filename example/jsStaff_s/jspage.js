@@ -1,4 +1,34 @@
 $(document).ready(function () {
+  $("#main1_4").hide();
+  $("#checka3-1").click(function () {
+    $("#main1_4").show();
+    $("#main1_5").hide();
+  });
+  $("#main1_5").hide();
+  $("#checka3-2").click(function () {
+    $("#main1_5").show();
+    $("#main1_4").hide();
+  });
+
+  $("#a4t").prop("disabled", true);
+  $("#checka4-5").click(function () {
+    $("#a4t").prop("disabled", false);
+    $("#a4t").focus();
+  });
+  $(".a4").click(function () {
+    $("#a4t").prop("disabled", true);
+    $("#a4t").val("");
+  });
+  $("#a5t").prop("disabled", true);
+  $("#checka5-6").click(function () {
+    $("#a5t").prop("disabled", false);
+    $("#a5t").focus();
+  });
+  $(".a5").click(function () {
+    $("#a5t").prop("disabled", true);
+    $("#a5t").val("");
+  });
+
   $("#checksex-1").click(function () {
     $("#checkq2-9-2").prop("checked", true);
   });
@@ -60,6 +90,53 @@ $(document).ready(function () {
 });
 
 $(".btnsub").submit(function () {
+  if ($(".a1:checked").length == "") {
+    alert("1.1 คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนักของท่านมีขนาดใด");
+    $("#checka1-1").focus();
+    return false;
+  }
+
+  if ($("#a2").val() == 0) {
+    alert("1.2 ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)");
+    $("#a2").focus();
+    return false;
+  }
+  if ($(".a3:checked").length == "") {
+    alert("1.3 ท่านปฏิบัติงานในสายงานใด");
+    $("#checka3-1").focus();
+    return false;
+  }
+
+  if ($("#checka3-1:checked").length == 1) {
+    //alert($("#checka3-1:checked").length);
+    if ($(".a4:checked").length == "" && $(".a4t:checked").length == "") {
+      alert("1.4 ตำแหน่งทางสายวิชาการ");
+      $("#checka4-1").focus();
+      return false;
+    }
+    if ($(".a4t:checked").length != "" && $("#a4t").val() == "") {
+      alert("5. ระบุ....");
+      $("#a4t").focus();
+      return false;
+    }
+    return true;
+  }
+
+  if ($("#checka3-2:checked").length == 1) {
+    // alert($("#checka3-2:checked").length);
+    if ($(".a5:checked").length == "" && $(".a5t:checked").length == "") {
+      alert("1.5 ตำแหน่งทางสายสนับสนุน");
+      $("#checka5-1").focus();
+      return false;
+    }
+    if ($(".a5t:checked").length != "" && $("#a5t").val() == "") {
+      alert("6. ระบุ....");
+      $("#a5t").focus();
+      return false;
+    }
+    return true;
+  }
+
   if ($(".sex:checked").length == "" && $(".sex1:checked").length == "") {
     alert("2.1 เพศ");
     $("#checksex-1").focus();

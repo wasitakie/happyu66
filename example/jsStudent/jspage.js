@@ -13,6 +13,18 @@ $(document).ready(function () {
 });
 
 $(".btnsub").submit(function () {
+  if ($("#a2").val() == 0) {
+    alert("1.2 ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)");
+    $("#a2").focus();
+    return false;
+  }
+  if ($(".a3:checked").length == "") {
+    alert(
+      "1.3 โดยรวมแล้วท่านเข้าร่วมกิจกรรม/ชมรมต่าง ๆ ในมหาวิทยาลัย (กิจกรรมใดก็ได้ที่เป็นหรือไม่เป็นสมาชิก) บ่อยครั้งเพียงใด"
+    );
+    $("#checka3-1").focus();
+    return false;
+  }
   if ($(".sex:checked").length == "") {
     alert("2.1 เพศ");
     $("#checksex-1").focus();

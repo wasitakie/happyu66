@@ -24,10 +24,222 @@ session_start()
                     ทุกข้อที่ท่านเลือก </p>
             </div>
 
-            <div class="headpage">
-                <h4>ส่วนที่ 2: ข้อมูลทั่วไป</h4>
-            </div>
             <form action="pageInsert.php" method="post" class="btnsub">
+
+                <div class="headpage">
+                    <h4>ส่วนที่ 1: ข้อมูลหน่วยงาน</h4>
+                </div>
+                <div class="box">
+                    <div class="question">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
+                                        1.1 คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนักของท่านมีขนาดใด</span></label>
+                                <div class="form-check">
+                                    <input class="form-check-input a1" type="radio" name="a1" id="checka1-1" value="1">
+                                    <label class="form-check-label" for="checka1-1">
+                                        1.เล็กมาก (1-20 คน)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a1" type="radio" name="a1" id="checka1-2" value="2">
+                                    <label class="form-check-label" for="checka1-2">
+                                        2. ขนาดเล็ก (21-50 คน)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a1" type="radio" name="a1" id="checka1-3" value="3">
+                                    <label class="form-check-label" for="checka1-3">
+                                        3. ขนาดกลาง (51-200 คน)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a1" type="radio" name="a1" id="checka1-4" value="4">
+                                    <label class="form-check-label" for="checka1-4">
+                                        4.ขนาดใหญ่ (201-500 คน)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a1" type="radio" name="a1" id="checka1-5" value="5">
+                                    <label class="form-check-label" for="checka1-5">
+                                        5. ขนาดใหญ่มาก (501–1,000 คน)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a1" type="radio" name="a1" id="checka1-6" value="6">
+                                    <label class="form-check-label" for="checka1-6">
+                                        6. ขนาดใหญ่มากที่สุด (1,001 คนขึ้นไป)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="question">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label type="text" for="formGroupExampleInput " class="form-label">
+                                    <span class="textQ">
+                                        1.2 ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก) </span></label>
+                                <select class="form-select a2" name="a2" aria-label="Default select example" id="a2">
+                                    <option value="0">ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)</option>
+                                    <option value="1.คณะเกษตรศาสตร์">1. คณะเกษตรศาสตร์</option>
+                                    <option value="2.คณะครุศาสตร์">2. คณะครุศาสตร์</option>
+                                    <option value="3.คณะเทคโนโลยีอุตสาหกรรม">3. คณะเทคโนโลยีอุตสาหกรรม</option>
+                                    <option value="4.คณะมนุษยศาสตร์และสังคมศาสตร์">4. คณะมนุษยศาสตร์และสังคมศาสตร์</option>
+                                    <option value="5.คณะวิทยาการจัดการ">5. คณะวิทยาการจัดการ</option>
+                                    <option value="6.คณะวิทยาศาสตร์และเทคโนโลยี">6. คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                                    <option value="7.วิทยาลัยนานาชาติ">7. วิทยาลัยนานาชาติ</option>
+                                    <option value="8.วิทยาลัยน่าน">8. วิทยาลัยน่าน</option>
+                                    <option value="9.โรงเรียนสาธิต">9. โรงเรียนสาธิต</option>
+                                    <option value="10.บัณฑิตวิทยาลัย">10. บัณฑิตวิทยาลัย</option>
+                                    <option value="11.สำนักงานอธิการบดี">11. สำนักงานอธิการบดี</option>
+                                    <option value="12.สำนักวิทยบริการและเทคโนโลยีสารสนเทศ">12. สำนักวิทยบริการและเทคโนโลยีสารสนเทศ</option>
+                                    <option value="13.สำนักงานตรวจสอบภายใน">13. สำนักงานตรวจสอบภายใน</option>
+                                    <option value="14.สถาบันวิจัยและพัฒนา">14. สถาบันวิจัยและพัฒนา</option>
+                                    15. งานโครงการอันเนื่องมาจากพระราชดำริ</option>
+                                    <option value="16.ศูนย์วิทยาศาสตร์และเทคโนโลยี">16. ศูนย์วิทยาศาสตร์และเทคโนโลยี</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="box">
+                    <div class="question">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
+                                        1.3 ท่านปฏิบัติงานในสายงานใด </span></label>
+                                <div class="form-check">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-1" value="1">
+                                    <label class="form-check-label" for="checka3-1">
+                                        1. สายวิชาการ (ข้ามไปตอบข้อ 1.4)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-2" value="2">
+                                    <label class="form-check-label" for="checka3-2">
+                                        2. สายสนับสนุน (ข้ามไปตอบข้อ 1.5)
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="box" id="main1_4">
+                    <div class="question">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
+                                        1.4 ตำแหน่งทางสายวิชาการ </span></label>
+                                <div class="form-check">
+                                    <input class="form-check-input a4" type="radio" name="a4" id="checka4-1" value="1">
+                                    <label class="form-check-label" for="checka4-1">
+                                        1. อาจารย์
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a4" type="radio" name="a4" id="checka4-2" value="2">
+                                    <label class="form-check-label" for="checka4-2">
+                                        2. ผู้ช่วยศาสตราจารย์
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a4" type="radio" name="a4" id="checka4-3" value="3">
+                                    <label class="form-check-label" for="checka4-3">
+                                        3. รองศาสตราจารย์
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a4" type="radio" name="a4" id="checka4-4" value="4">
+                                    <label class="form-check-label" for="checka4-4">
+                                        4. ศาสตราจารย์
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a4t" name="a4" type="radio" value="5" id="checka4-5">
+                                    <label class="form-check-label" for="checka4-5">
+                                        5. อื่น ๆ ระบุ
+                                        <input type="text" class="form-control " id="a4t" style="width:200px" name="a4t" placeholder="ระบุ">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="box" id="main1_5">
+                    <div class="question">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
+                                        1.5 ตำแหน่งทางสายสนับสนุน </span></label>
+                                <div class="form-check">
+                                    <input class="form-check-input a5" type="radio" name="a5" id="checka5-1" value="1">
+                                    <label class="form-check-label" for="checka5-1">
+                                        1. เจ้าหน้าที่/พนักงาน/นักปฏิบัติการ
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a5" type="radio" name="a5" id="checka5-2" value="2">
+                                    <label class="form-check-label" for="checka5-2">
+                                        2. ผู้ชำนาญการ
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a5" type="radio" name="a5" id="checka5-3" value="3">
+                                    <label class="form-check-label" for="checka5-3">
+                                        3. ผู้เชี่ยวชาญ
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a5" type="radio" name="a5" id="checka5-4" value="4">
+                                    <label class="form-check-label" for="checka5-4">
+                                        4. ผู้ชำนาญการพิเศษ
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a5" type="radio" name="a5" id="checka5-5" value="5">
+                                    <label class="form-check-label" for="checka5-5">
+                                        5. ผู้เชี่ยวชาญพิเศษ
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input a5t" name="a5" type="radio" value="6" id="checka5-6">
+                                    <label class="form-check-label" for="checka5-6">
+                                        6. อื่น ๆ ระบุ
+                                        <input type="text" class="form-control " id="a5t" style="width:200px" name="a5t" placeholder="ระบุ">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="headpage">
+                    <h4>ส่วนที่ 2: ข้อมูลทั่วไป</h4>
+                </div>
+
                 <div class="box">
                     <div class="question">
                         <div class="row g-3">
