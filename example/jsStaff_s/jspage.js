@@ -107,7 +107,10 @@ $(".btnsub").submit(function () {
     return false;
   }
 
-  if ($("#checka3-1:checked").length == 1) {
+  if (
+    $("#checka3-1:checked").attr("data-id") == 1 &&
+    $("#checka3-1:checked") !== ""
+  ) {
     //alert($("#checka3-1:checked").length);
     if ($(".a4:checked").length == "" && $(".a4t:checked").length == "") {
       alert("1.4 ตำแหน่งทางสายวิชาการ");
@@ -119,10 +122,12 @@ $(".btnsub").submit(function () {
       $("#a4t").focus();
       return false;
     }
-    return true;
   }
 
-  if ($("#checka3-2:checked").length == 1) {
+  if (
+    $("#checka3-2:checked").attr("data-id") == 2 &&
+    $("#checka3-2:checked") !== ""
+  ) {
     // alert($("#checka3-2:checked").length);
     if ($(".a5:checked").length == "" && $(".a5t:checked").length == "") {
       alert("1.5 ตำแหน่งทางสายสนับสนุน");
@@ -134,7 +139,6 @@ $(".btnsub").submit(function () {
       $("#a5t").focus();
       return false;
     }
-    return true;
   }
 
   if ($(".sex:checked").length == "" && $(".sex1:checked").length == "") {

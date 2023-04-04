@@ -14,7 +14,7 @@ $_SESSION["page6_array"] = $page6_array;
 // foreach ($_SESSION["page6_array"] as $page6) {
 //     echo $page6 . "<br>";
 // }
-include './function/staffNumText.php';
+include '../function/staffNumText.php';
 
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';

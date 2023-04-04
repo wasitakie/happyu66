@@ -15,7 +15,7 @@ $_SESSION["page7_array"] = $page7_array;
 //     echo $page7 . "<br>";
 // }
 // header("Location: page8.php");
-include './function/staffNumText.php';
+include '../function/staffNumText.php';
 
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';
