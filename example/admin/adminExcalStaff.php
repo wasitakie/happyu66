@@ -26,7 +26,13 @@ header('Content-Disposition: attachment; filename="เจ้าหน้าท�
 
             <td>ลำดับที่</td>
 
-
+            <td>aq1</td>
+            <td>aq2</td>
+            <td>aq3</td>
+            <td>aq4</td>
+            <td>aq4t</td>
+            <td>aq5</td>
+            <td>aq5t</td>
             <td>sex</td>
             <td>age</td>
             <td>qp3</td>
@@ -189,6 +195,13 @@ header('Content-Disposition: attachment; filename="เจ้าหน้าท�
 
 	<td>' . $n . '</td>
 	
+    <td>' . $num["a1"] . '</td>
+    <td>' . $num["a2"] . '</td>
+    <td>' . $num["a3"] . '</td>
+    <td>' . $num["a4"] . '</td>
+    <td>' . $num["a4t"] . '</td>
+    <td>' . $num["a5"] . '</td>
+    <td>' . $num["a5t"] . '</td>
 
 	<td>' . $num["sex"] . '</td>
 	<td>' . $num["age"] . '</td>

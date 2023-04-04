@@ -119,13 +119,13 @@ session_start()
                                 <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
                                         1.3 ท่านปฏิบัติงานในสายงานใด </span></label>
                                 <div class="form-check">
-                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-1" value="1">
+                                    <input class="form-check-input a3" type="radio" data-id="1" name="a3" id="checka3-1" value="1">
                                     <label class="form-check-label" for="checka3-1">
                                         1. สายวิชาการ (ข้ามไปตอบข้อ 1.4)
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-2" value="2">
+                                    <input class="form-check-input a3" type="radio" data-id="2" name="a3" id="checka3-2" value="2">
                                     <label class="form-check-label" for="checka3-2">
                                         2. สายสนับสนุน (ข้ามไปตอบข้อ 1.5)
                                     </label>

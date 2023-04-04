@@ -16,7 +16,7 @@ session_start();
 
 <body>
     <?php include '../banner/banner.php'; ?>
-    <?php include './function/staffNumText.php' ?>
+    <?php include '../function/staffNumText.php' ?>
     <div class="container" style="margin-top:2rem;">
         <div class="col-md-12">
             <p style="text-align:center"><span style="font-size:16px"><strong>ความร่วมมือมหาวิทยาลัยแห่งความสุขสู่มหาวิทยาลัยสุขภาวะ<br />

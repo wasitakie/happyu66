@@ -7,7 +7,7 @@ $sumData = array('', '0', '18', '50', '75', '100');
 
 $sumDataAll = ($sumData[$_POST["q15"]] + $sumData[$_POST["q16"]] + $sumData[$_POST["q17"]] + $sumData[$_POST["q18"]] + $sumData[$_POST["q19"]]) / 5;
 
-$_SESSION["sumNum2"] = $sumDataAll;
+$_SESSION["sumNum3"] = $sumDataAll;
 $_SESSION["page3_array"] = $page3_array;
 
 
@@ -15,7 +15,7 @@ $_SESSION["page3_array"] = $page3_array;
 //     echo $page3 . "<br>";
 // }
 // header("Location: page4.php");
-include './function/staffNumText.php';
+include '../function/staffNumText.php';
 
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';
