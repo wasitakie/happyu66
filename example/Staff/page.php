@@ -400,7 +400,7 @@ session_start()
                         <div class="form-check">
                             <input class="form-check-input q2-5" name="q2_5_7" type="checkbox" value="7" id="checkq2-5-7">
                             <label class="form-check-label" for="checkq2-5-7">
-                                7. ญาติ
+                                7. ญาติอื่น ๆ
                             </label>
                         </div>
                         <div class="form-check">
@@ -412,7 +412,7 @@ session_start()
                         <div class="form-check">
                             <input class="form-check-input q2-5" name="q2_5_9" type="checkbox" value="9" id="checkq2-5-9">
                             <label class="form-check-label" for="checkq2-5-9">
-                                9. คนรัก/แฟน
+                                9. คู่รัก/ คนรัก/ แฟน
                             </label>
                         </div>
                         <div class="form-check">
