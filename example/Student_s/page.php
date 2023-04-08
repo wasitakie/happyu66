@@ -98,7 +98,7 @@ include '../session/sessionuser.php';
                                 <div class="form-check">
                                     <input class="form-check-input a3" type="radio" name="a3" id="checka3-3" value="3">
                                     <label class="form-check-label" for="checka3-3">
-                                        3.เข้าร่วมบางครั้ง/เท่าที่จำเป็น
+                                        3. เข้าร่วมบางครั้ง/เท่าที่จำเป็น
                                     </label>
                                 </div>
                                 <div class="form-check">

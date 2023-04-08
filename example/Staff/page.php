@@ -531,7 +531,7 @@ session_start()
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input q2-7" type="radio" name="q2-7" id="checkq2-7-6" value="5">
+                            <input class="form-check-input q2-7" type="radio" name="q2-7" id="checkq2-7-6" value="6">
                             <label class="form-check-label" for="checkq2-7-6">
                                 6. หย่า/ แยกทาง/ เลิกกัน
                             </label>

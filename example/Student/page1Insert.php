@@ -9,7 +9,7 @@ $sumDataAll = ($sumData[$_POST["q2"]] + $sumData[$_POST["q3"]] + $sumData[$_POST
 
 $_SESSION["sumNum1"] = $sumDataAll;
 $_SESSION["page1_array"] = $page1_array;
-include './function/staffNumText.php';
+include '../function/staffNumText.php';
 
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';
@@ -76,4 +76,3 @@ if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
 </body>
 
 </html>
-//header("Location: insertData.php");

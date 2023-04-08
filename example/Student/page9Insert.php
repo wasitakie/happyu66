@@ -5,11 +5,11 @@ $page9_array = array("", $_POST["q52"], $_POST["q53"], $_POST["q54"], $_POST["q5
 
 $sumData  = array('', '0', '10', '25', '75', '100');
 
-$sumDataAll = ($sumData[$_POST["q52"]] + $sumData[$_POST["q53"]] + $sumData[$_POST["q54"]] + $sumData[$_POST["q55"]] + $sumData[$_POST["q56"]] + $sumData[$_POST["q57"]] + $sumData[$_POST["q58"]] + $sumData[$_POST["q59"]] + $sumData[$_POST["q60"]] + $sumData[$_POST["q61"]] + $sumData[$_POST["q62"]] + $sumData[$_POST["q63"]] + $sumData[$_POST["q64"]] + $sumData[$_POST["q65"]] + $sumData[$_POST["q66"]] + $sumData[$_POST["q67"]] + $sumData[$_POST["q68"]]) / 18;
+$sumDataAll = ($sumData[$_POST["q52"]] + $sumData[$_POST["q53"]] + $sumData[$_POST["q54"]] + $sumData[$_POST["q55"]] + $sumData[$_POST["q56"]] + $sumData[$_POST["q57"]] + $sumData[$_POST["q58"]] + $sumData[$_POST["q59"]] + $sumData[$_POST["q60"]] + $sumData[$_POST["q61"]] + $sumData[$_POST["q62"]] + $sumData[$_POST["q63"]] + $sumData[$_POST["q64"]] + $sumData[$_POST["q65"]] + $sumData[$_POST["q66"]] + $sumData[$_POST["q67"]] + $sumData[$_POST["q68"]] + $sumData[$_POST["q69"]]) / 18;
 
 $_SESSION["sumNum9"] = $sumDataAll;
 $_SESSION["page9_array"] = $page9_array;
-include './function/staffNumText.php';
+include '../function/staffNumText.php';
 
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';

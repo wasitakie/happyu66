@@ -293,13 +293,13 @@ session_start()
                         <div class="form-check">
                             <input class="form-check-input q8" type="radio" name="q8" id="checkq8-1" value="1">
                             <label class="form-check-label" for="checkq8-1">
-                                1.ดื่มเป็นประจำ (ดื่มเกือบทุกวัน/ เกือบทุกสัปดาห์)
+                                1. ดื่มเป็นประจำ (ดื่มเกือบทุกวัน/ เกือบทุกสัปดาห์)
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input q8" type="radio" name="q8" id="checkq8-2" value="2">
                             <label class="form-check-label" for="checkq8-2">
-                                2.ดื่มบ่อยครั้ง (ดื่มเกือบทุกเดือน)
+                                2. ดื่มบ่อยครั้ง (ดื่มเกือบทุกเดือน)
                             </label>
                         </div>
                         <div class="form-check">
@@ -311,7 +311,7 @@ session_start()
                         <div class="form-check">
                             <input class="form-check-input q8" type="radio" name="q8" id="checkq8-4" value="4">
                             <label class="form-check-label" for="checkq8-4">
-                                4.ไม่ดื่มแต่เคยดื่ม
+                                4. ไม่ดื่มแต่เคยดื่ม
                             </label>
                         </div>
                         <div class="form-check">

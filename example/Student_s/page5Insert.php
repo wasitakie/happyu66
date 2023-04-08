@@ -10,7 +10,7 @@ $sumDataAll = ($sumData[$_POST["q33"]] + $sumData[$_POST["q34"]] + $sumData[$_PO
 
 $_SESSION["sumNum5"] = $sumDataAll;
 $_SESSION["page5_array"] = $page5_array;
-include './function/staffNumText.php';
+include '../function/staffNumText.php';
 
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';

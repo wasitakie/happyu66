@@ -6,11 +6,11 @@ $page6_array = array("", $_POST["q36"], $_POST["q37"], $_POST["q38"], $_POST["q3
 
 $sumData = array('', '0', '25', '50', '75', '100');
 
-$sumDataAll = ($_POST["q36"] + $_POST["q37"] + $_POST["q38"] + $_POST["q39"] + $_POST["q40"] + $_POST["q41"] + $_POST["q42"] + $_POST["q43"] + $_POST["q44"]) / 9;
+$sumDataAll = ($sumData[$_POST["q36"]] + $sumData[$_POST["q37"]] + $sumData[$_POST["q38"]] + $sumData[$_POST["q39"]] + $sumData[$_POST["q40"]] + $sumData[$_POST["q41"]] + $sumData[$_POST["q42"]] + $sumData[$_POST["q43"]] + $sumData[$_POST["q44"]]) / 9;
 
 $_SESSION["sumNum6"] = $sumDataAll;
 $_SESSION["page6_array"] = $page6_array;
-include './function/staffNumText.php';
+include '../function/staffNumText.php';
 
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';

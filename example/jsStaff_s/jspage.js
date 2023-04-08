@@ -108,10 +108,10 @@ $(".btnsub").submit(function () {
   }
 
   if (
-    $("#checka3-1:checked").attr("data-id") == 1 &&
-    $("#checka3-1:checked") !== ""
+    $("#checka3-1").attr("data-id") == 1 &&
+    $("#checka3-1:checked").length != ""
   ) {
-    //alert($("#checka3-1:checked").length);
+    //alert($("#checka3-1").attr("data-id"));
     if ($(".a4:checked").length == "" && $(".a4t:checked").length == "") {
       alert("1.4 ตำแหน่งทางสายวิชาการ");
       $("#checka4-1").focus();
@@ -125,8 +125,8 @@ $(".btnsub").submit(function () {
   }
 
   if (
-    $("#checka3-2:checked").attr("data-id") == 2 &&
-    $("#checka3-2:checked") !== ""
+    $("#checka3-2").attr("data-id") == 2 &&
+    $("#checka3-2:checked").length != ""
   ) {
     // alert($("#checka3-2:checked").length);
     if ($(".a5:checked").length == "" && $(".a5t:checked").length == "") {

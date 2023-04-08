@@ -79,11 +79,11 @@ session_start()
                     <div class="question">
                         <div class="row g-3">
                             <div class="col">
-                                <label type="text" for="formGroupExampleInput " class="form-label" id="a2">
+                                <label type="text" for="formGroupExampleInput " class="form-label">
                                     <span class="textQ">
                                         1.2 ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก) </span></label>
-                                <select class="form-select a2" name="a2" aria-label="Default select example">
-                                    <option value="0">ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)</option>
+                                <select class="form-select a2" name="a2" aria-label="Default select example" id="a2">
+                                    <option value="0">----ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)-----</option>
                                     <option value="1.คณะครุศาสตร์">1. คณะครุศาสตร์</option>
                                     <option value="2.คณะวิทยาศาสตร์และเทคโนโลยี">2. คณะวิทยาศาสตร์และเทคโนโลยี</option>
                                     <option value="3.คณะวิทยาการจัดการ">3. คณะวิทยาการจัดการ</option>
@@ -117,13 +117,13 @@ session_start()
                                 <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
                                         1.3 ท่านปฏิบัติงานในสายงานใด </span></label>
                                 <div class="form-check">
-                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-1" value="1" id-data="1">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-1" value="1" data-id="1">
                                     <label class="form-check-label" for="checka3-1">
                                         1. สายวิชาการ (ข้ามไปตอบข้อ 1.4)
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-2" value="2" id-data="2">
+                                    <input class="form-check-input a3" type="radio" name="a3" id="checka3-2" value="2" data-id="2">
                                     <label class="form-check-label" for="checka3-2">
                                         2. สายสนับสนุน (ข้ามไปตอบข้อ 1.5)
                                     </label>
@@ -525,7 +525,7 @@ session_start()
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input q2-7" type="radio" name="q2-7" id="checkq2-7-6" value="5">
+                            <input class="form-check-input q2-7" type="radio" name="q2-7" id="checkq2-7-6" value="6">
                             <label class="form-check-label" for="checkq2-7-6">
                                 6. หย่า/ แยกทาง/ เลิกกัน
                             </label>
@@ -899,7 +899,7 @@ session_start()
                 </div>
             </form>
             <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-            <script src="../jsStaff/jspage.js"></script>
+            <script src="../jsStaff_s/jspage.js"></script>
 
 
 

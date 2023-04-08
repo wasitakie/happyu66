@@ -3,13 +3,13 @@ session_start();
 
 $page8_array = array("", $_POST["q48"], $_POST["q49"], $_POST["q50"], $_POST["q51"], $_POST["cv8"]);
 
-$sumData = array('', '0', '10', '25', '50', '75', '100');
+$sumData = array('', '0', '25', '50', '75', '100');
 
 $sumDataAll  = ($sumData[$_POST["q48"]] + $sumData[$_POST["q49"]] + $sumData[$_POST["q50"]] + $sumData[$_POST["q51"]]) / 4;
 
 $_SESSION["sumNum8"] = $sumDataAll;
 $_SESSION["page8_array"] = $page8_array;
-include './function/staffNumText.php';
+include '../function/staffNumText.php';
 
 if ($sumDataAll >= 0.00 and $sumDataAll <= 24.00) {
     $imgS = '<img src="../imgS/s1.png">';

@@ -109,15 +109,15 @@ $nm8 = number_format($_SESSION["sumNum8"], 2);
         $img_nm8 = '<img src="../img/h.png">' . '<br>Very Happy';
     }
 
-    if ($nm9 <= '24.99') {
-        $img_nm9 = '<img src="../img/v.png">' . '<br>Very Unhappy';
-    } elseif ($nm9 >= '25.00' and $nm9 <= '49.99') {
-        $img_nm9 = '<img src="../img/v.png">' . '<br>Unhappy';
-    } elseif ($nm9 >= '50.00' and $nm9 <= '74.99') {
-        $img_nm9 = '<img src="../img/u.png">' . '<br>Happy';
-    } elseif ($nm9 >= '75.00' and $nm9 <= '100.00') {
-        $img_nm9 = '<img src="../img/h.png">' . '<br>Very Happy';
-    }
+    // if ($nm9 <= '24.99') {
+    //     $img_nm9 = '<img src="../img/v.png">' . '<br>Very Unhappy';
+    // } elseif ($nm9 >= '25.00' and $nm9 <= '49.99') {
+    //     $img_nm9 = '<img src="../img/v.png">' . '<br>Unhappy';
+    // } elseif ($nm9 >= '50.00' and $nm9 <= '74.99') {
+    //     $img_nm9 = '<img src="../img/u.png">' . '<br>Happy';
+    // } elseif ($nm9 >= '75.00' and $nm9 <= '100.00') {
+    //     $img_nm9 = '<img src="../img/h.png">' . '<br>Very Happy';
+    // }
 
     if ($nm10 <= '24.99') {
         $img_nm10 = '<img src="../img/v.png">' . '<br>Very Unhappy';
@@ -245,6 +245,7 @@ $nm8 = number_format($_SESSION["sumNum8"], 2);
                         <td><?= $nm6 ?></td>
                         <td><?= $nm7 ?></td>
                         <td><?= $nm8 ?></td>
+                        <td></td>
                         <td><?= $nm10 ?></td>
                     </tr>
                     <tr class="textHappy">

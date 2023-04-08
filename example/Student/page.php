@@ -55,7 +55,7 @@ include '../session/sessionuser.php';
                                     <span class="textQ">
                                         1.2 ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย) </span></label>
                                 <select class="form-select a2" name="a2" aria-label="Default select example" id="a2">
-                                    <option value="0">ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)</option>
+                                    <option value="0">---ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)----</option>
                                     <option value="1.คณะเกษตรศาสตร์">1. คณะเกษตรศาสตร์</option>
                                     <option value="2.คณะครุศาสตร์">2. คณะครุศาสตร์</option>
                                     <option value="3.คณะเทคโนโลยีอุตสาหกรรม">3. คณะเทคโนโลยีอุตสาหกรรม</option>
