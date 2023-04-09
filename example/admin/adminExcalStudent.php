@@ -1,11 +1,11 @@
 <?php
 session_start();
 include  '../session/sessionadmin.php';
-
+include '../function/staffNumText.php';
 ?>
 <?php
 header("Content-Type: application/vnd.ms-excel");
-header('Content-Disposition: attachment; filename="นักศึกษาฉบับเต็ม.xls"'); #ชื่อไฟล์
+header('Content-Disposition: attachment; filename="' . $nameSchoolS . 'เต็ม.xls"'); #ชื่อไฟล์
 ?>
 
 <html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
@@ -157,8 +157,6 @@ header('Content-Disposition: attachment; filename="นักศึกษาฉ�
 			<td>88</td>
 			<td>89</td>
 			<td>90</td>
-
-
 
 			<td>date</td>
 			<td>idcode</td>

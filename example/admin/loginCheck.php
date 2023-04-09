@@ -2,34 +2,18 @@
 session_start();
 include '../config/connect.php';
 
-if ($_POST["saltus"] == 1) {
-    try {
-        $admin = $conStudent->prepare("SELECT* FROM admin WHERE user = ? AND pass = ? ");
-        $admin->execute([$_POST["user"], $_POST["pass"]]);
-        $row = $admin->rowCount();
-        if ($row == 1) {
-            $r = $admin->fetch(PDO::FETCH_ASSOC);
-            $_SESSION["admin"] = $r["check"];
-            header("location:adminPageStaff.php");
-        } else {
-            header("location:index.php");
-        }
-    } catch (Exception $e) {
-        echo "on insert " . $e->getMessage();
+
+try {
+    $admin = $conStudent->prepare("SELECT* FROM admin WHERE user = ? AND pass = ? ");
+    $admin->execute([$_POST["user"], $_POST["pass"]]);
+    $row = $admin->rowCount();
+    if ($row == 1) {
+        $r = $admin->fetch(PDO::FETCH_ASSOC);
+        $_SESSION["admin"] = $r["check"];
+        header("location:adminPageAll.php");
+    } else {
+        header("location:index.php");
     }
-} elseif ($_POST["saltus"] == 3) {
-    try {
-        $admin = $conStudent->prepare("SELECT* FROM admin WHERE user = ? AND pass = ? ");
-        $admin->execute([$_POST["user"], $_POST["pass"]]);
-        $row = $admin->rowCount();
-        if ($row == 1) {
-            $r = $admin->fetch(PDO::FETCH_ASSOC);
-            $_SESSION["admin"] = $r["check"];
-            header("location:adminPageStudent.php");
-        } else {
-            header("location:index.php");
-        }
-    } catch (Exception $e) {
-        echo "on insert " . $e->getMessage();
-    }
+} catch (Exception $e) {
+    echo "on insert " . $e->getMessage();
 }

@@ -1,11 +1,11 @@
 <?php
 session_start();
 include  '../session/sessionadmin.php';
-
+include '../function/staffNumText.php';
 ?>
 <?php
 header("Content-Type: application/vnd.ms-excel");
-header('Content-Disposition: attachment; filename="เจ้าหน้าที่ฉบับย่อ.xls"'); #ชื่อไฟล์
+header('Content-Disposition: attachment; filename="' . $nameSchoolS . 'ย่อ.xls"'); #ชื่อไฟล์
 ?>
 
 <html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">

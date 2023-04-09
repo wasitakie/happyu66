@@ -32,16 +32,7 @@
                         <label for="exampleFormControlInput1" class="form-label">Password</label>
                         <input type="password" class="form-control" id="exampleFormControlInput1" name="pass" placeholder="Password" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label">เลือก</label>
-                        <select class="form-select " name="saltus" id="" required>
-                            <option selected>-- เลือก --</option>
-                            <option value="1">เจ้าหน้าที่ฉบับเต็ม</option>
-                            <option value="2">เจ้าหน้าที่ฉบับย่อ</option>
-                            <option value="3">นักศึกษาฉบับเต็ม</option>
-                            <option value="4">นักศึกษาฉบับย่อ</option>
-                        </select>
-                    </div>
+
                     <div class="d-grid gap-2">
                         <button type="submit" name="" id="" class="btn btn-primary">Login</button>
                     </div>
