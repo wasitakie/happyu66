@@ -26,7 +26,8 @@ header('Content-Disposition: attachment; filename="' . $nameSchoolS . 'เต็
 
 			<td>ลำดับที่</td>
 
-
+			<td>a2</td>
+			<td>a3</td>
 			<td>sex</td>
 			<td>age</td>
 			<td>qp3</td>
@@ -179,7 +180,8 @@ header('Content-Disposition: attachment; filename="' . $nameSchoolS . 'เต็
 
 	<td>' . $n . '</td>
 	
-
+	<td>' . $num["a2"] . '</td>
+	<td>' . $num["a3"] . '</td>
 	<td>' . $num["sex"] . '</td>
 	<td>' . $num["age"] . '</td>
 	<td>' . $num["q2_3"] . '</td>
