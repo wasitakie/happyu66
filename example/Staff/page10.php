@@ -235,7 +235,7 @@ session_start()
                         <div class="form-check">
                             <input class="form-check-input q63" type="radio" name="q63" id="checkq63-1" value="1">
                             <label class="form-check-label" for="checkq63-1">
-                                1. ไม่มี/ มีน้อยที่สุด
+                                1. ไม่รู้สึก/ รู้สึกน้อยที่สุด
                             </label>
                         </div>
                         <div class="form-check">

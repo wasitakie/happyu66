@@ -3,7 +3,7 @@ session_start();
 //18//
 $page9_array = array("", $_POST["q41"], $_POST["q42"], $_POST["q43"], $_POST["q44"], $_POST["q45"], $_POST["q46"], $_POST["q47"], $_POST["q48"], $_POST["q49"], $_POST["q50"], $_POST["q51"], $_POST["q52"], $_POST["q53"], $_POST["q54"], $_POST["q55"], $_POST["q56"], $_POST["q57"], $_POST["cv9"]);
 
-$sumData = array('', '0', '10', '25', '75', '100');
+$sumData = array('', '0', '25', '50', '75', '100');
 
 $sumDataAll = ($sumData[$_POST["q41"]] + $sumData[$_POST["q42"]] + $sumData[$_POST["q43"]] + $sumData[$_POST["q44"]] + $sumData[$_POST["q45"]] + $sumData[$_POST["q46"]] + $sumData[$_POST["q47"]] + $sumData[$_POST["q48"]] + $sumData[$_POST["q49"]] + $sumData[$_POST["q50"]] + $sumData[$_POST["q51"]] + $sumData[$_POST["q52"]] + $sumData[$_POST["q53"]] + $sumData[$_POST["q54"]] + $sumData[$_POST["q55"]] + $sumData[$_POST["q56"]] + $sumData[$_POST["q57"]]) / 17;
 

@@ -70,31 +70,31 @@ session_start()
                         <div class="form-check">
                             <input class="form-check-input q67" type="radio" name="q67" id="checkq67-1" value="1">
                             <label class="form-check-label" for="checkq67-1">
-                                1. 1- 2 วัน
+                                1. ทำงาน 1- 2 วัน
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input q67" type="radio" name="q67" id="checkq67-2" value="2">
                             <label class="form-check-label" for="checkq67-2">
-                                2. 3 – 4 วัน
+                                2. ทำงาน 3 – 4 วัน
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input q67" type="radio" name="q67" id="checkq67-3" value="3">
                             <label class="form-check-label" for="checkq67-3">
-                                3. 5 วัน
+                                3. ทำงาน 5 วัน
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input q67" type="radio" name="q67" id="checkq67-4" value="4">
                             <label class="form-check-label" for="checkq67-4">
-                                4. 6 วัน
+                                4. ทำงาน 6 วัน
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input q67" type="radio" name="q67" id="checkq67-5" value="5">
                             <label class="form-check-label" for="checkq67-5">
-                                5. 7 วัน (ทุกวัน)
+                                5. ทำงาน 7 วัน (ทุกวัน)
                             </label>
                         </div>
                     </div>
@@ -148,7 +148,7 @@ session_start()
                         <div class="form-check">
                             <input class="form-check-input q69" type="radio" name="q69" id="checkq69-1" value="1">
                             <label class="form-check-label" for="checkq69-1">
-                                1. น้อยกว่า 1 ชั่วโมงด
+                                1. น้อยกว่า 1 ชั่วโมง
                             </label>
                         </div>
                         <div class="form-check">
