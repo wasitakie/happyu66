@@ -128,7 +128,7 @@ $nm8 = number_format($_SESSION["sumNum8"], 2);
     } elseif ($nm10 >= '75.00' and $nm10 <= '100.00') {
         $img_nm10 = '<img src="../img/h.png">' . '<br>Very Happy';
     }
-    $nm10 = number_format(($nm1 + $nm2 + $nm4 + $nm5 + $nm6 + $nm7 + $nm8) / 8, 2);
+    $nm10 = number_format(($nm1 + $nm2 + $nm3 + $nm4 + $nm5 + $nm6 + $nm7 + $nm8) / 8, 2);
 
     $sex = $_SESSION["page_array"][1];
     $hi = $_SESSION["page1_array"][3] / 100;
