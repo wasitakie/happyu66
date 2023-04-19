@@ -2,7 +2,7 @@
 session_start();
 include  '../session/sessionadmin.php';
 include '../config/connect.php';
-include '../config/connect_s.php';
+// include '../config/connect_s.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@ include '../config/connect_s.php';
 <body>
     <?php include '../banner/banner.php'; ?>
     <?php
-    $stmt = $conStaff->prepare("SELECT* FROM insert_data ORDER BY id DESC");
+    $stmt = $con->prepare("SELECT* FROM staff_f ORDER BY id DESC");
     $stmt->execute();
     $row = $stmt->rowCount();
     $date = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -46,7 +46,7 @@ include '../config/connect_s.php';
         <hr>
     </div>
     <?php
-    $stmt = $conStaff_s->prepare("SELECT* FROM insert_data ORDER BY id DESC");
+    $stmt = $con->prepare("SELECT* FROM staff_s ORDER BY id DESC");
     $stmt->execute();
     $row = $stmt->rowCount();
     $date = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -69,7 +69,7 @@ include '../config/connect_s.php';
         <hr>
     </div>
     <?php
-    $stmt = $conStudent->prepare("SELECT* FROM insert_data ORDER BY id DESC");
+    $stmt = $con->prepare("SELECT* FROM student_f ORDER BY id DESC");
     $stmt->execute();
     $row = $stmt->rowCount();
     $date = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -95,7 +95,7 @@ include '../config/connect_s.php';
         <hr>
     </div>
     <?php
-    $stmt = $conStudent_s->prepare("SELECT* FROM insert_data ORDER BY id DESC");
+    $stmt = $con->prepare("SELECT* FROM student_s ORDER BY id DESC");
     $stmt->execute();
     $row = $stmt->rowCount();
     $date = $stmt->fetch(PDO::FETCH_ASSOC);

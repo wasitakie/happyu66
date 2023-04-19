@@ -4,22 +4,22 @@ include '../config/connect.php';
 include '../config/connect_s.php';
 
 if ($_GET["g"] == "sf") {
-    $f = $conStaff->prepare("DELETE FROM insert_data WHERE idcode <> ?  ");
+    $f = $con->prepare("DELETE FROM staff_f WHERE idcode <> ?  ");
     $f->execute([0]);
     header("location:adminPageAll.php");
 }
 if ($_GET["g"] == "ss") {
-    $f = $conStaff_s->prepare("DELETE FROM insert_data WHERE idcode <> ?  ");
+    $f = $con->prepare("DELETE FROM staff_s WHERE idcode <> ?  ");
     $f->execute([0]);
     header("location:adminPageAll.php");
 }
 if ($_GET["g"] == "sdf") {
-    $f = $conStudent->prepare("DELETE FROM insert_data WHERE idcode <> ?  ");
+    $f = $con->prepare("DELETE FROM student_f WHERE idcode <> ?  ");
     $f->execute([0]);
     header("location:adminPageAll.php");
 }
 if ($_GET["g"] == "sds") {
-    $f = $conStudent_s->prepare("DELETE FROM insert_data WHERE idcode <> ?  ");
+    $f = $con->prepare("DELETE FROM student_s WHERE idcode <> ?  ");
     $f->execute([0]);
     header("location:adminPageAll.php");
 }
