@@ -123,9 +123,9 @@ header('Content-Disposition: attachment; filename="' . $nameSchoolS . 'ย่อ
         </TR>
 
         <?php
-        include '../config/connect_s.php';
+        include '../config/connect.php';
 
-        $se = $conStudent_s->prepare("SELECT* FROM insert_data");
+        $se = $con->prepare("SELECT* FROM student_s");
         $se->execute();
         $n = 1;
 

@@ -19,8 +19,7 @@ session_start();
     <?php include '../function/staffNumText.php' ?>
     <div class="container" style="margin-top:2rem;">
         <div class="col-md-12">
-            <p style="text-align:center"><span style="font-size:16px"><strong>ความร่วมมือมหาวิทยาลัยแห่งความสุขสู่มหาวิทยาลัยสุขภาวะ<br />
-                        โดยความร่วมมือระหว่างมหาวิทยาลัยมหิดลและมหาวิทยาลัยมหิดล</strong></span></p>
+
 
             <p style="text-align:center"><strong><span style="font-size:18px">แบบสำรวจความผูกพัน ความพึงพอใจ และความสุข<br />
                         สำหรับบุคลากร <?= $nameSchool ?></span></strong><br />

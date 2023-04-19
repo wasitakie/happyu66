@@ -2,7 +2,7 @@
 session_start();
 include  '../session/sessionadmin.php';
 include '../config/connect.php';
-include '../config/connect_s.php';
+// include '../config/connect_s.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,14 +20,20 @@ include '../config/connect_s.php';
 <body>
     <?php include '../banner/banner.php'; ?>
     <?php
-    $stmt = $conStaff->prepare("SELECT* FROM insert_data ORDER BY id DESC");
+    $stmt = $con->prepare("SELECT* FROM staff_f ORDER BY id DESC");
     $stmt->execute();
     $row = $stmt->rowCount();
     $date = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    if ($_SESSION["admin"] == "s") {
+        $btnS = '<a class="btn btn-primary" href="delete_db.php?g=sf" role="button" onclick="return confirm(\'กรุณายืนยันการลบข้อมูลนี้อีกครั้ง\')";>ลบฐานข้อมูลเจ้าหน้าที่ฉบับเต็ม</a>';
+    }
+
     ?>
     <div class="container" style="margin-top:3rem;">
         <div class="col-md-12">
+
+            <div style="text-align:right"><?= $btnS ?></div>
 
             <h5>แบบสอบถามของเจ้าหน้าที่ฉบับเต็ม</h5>
 
@@ -40,15 +46,19 @@ include '../config/connect_s.php';
         <hr>
     </div>
     <?php
-    $stmt = $conStaff_s->prepare("SELECT* FROM insert_data ORDER BY id DESC");
+    $stmt = $con->prepare("SELECT* FROM staff_s ORDER BY id DESC");
     $stmt->execute();
     $row = $stmt->rowCount();
     $date = $stmt->fetch(PDO::FETCH_ASSOC);
 
+
+    if ($_SESSION["admin"] == "s") {
+        $btnS = '<a class="btn btn-primary" href="delete_db.php?g=ss" role="button" onclick="return confirm(\'กรุณายืนยันการลบข้อมูลนี้อีกครั้ง\')";>ลบฐานข้อมูลเจ้าหน้าที่ฉบับย่อ</a>';
+    }
     ?>
     <div class="container" style="margin-top:3rem;">
         <div class="col-md-12">
-
+            <div style="text-align:right"><?= $btnS ?></div>
             <h5>แบบสอบถามของเจ้าหน้าที่ฉบับย่อ</h5>
 
             <p>จำนวนผู้ตอบทั้งหมด <?= $row ?> คน ตอบล่าสุดเมื่อวันที่ <?= $date["date"] ?> <a href="adminExcalStaff_S.php" target="_blank">Download Excal</a>
@@ -59,15 +69,19 @@ include '../config/connect_s.php';
         <hr>
     </div>
     <?php
-    $stmt = $conStudent->prepare("SELECT* FROM insert_data ORDER BY id DESC");
+    $stmt = $con->prepare("SELECT* FROM student_f ORDER BY id DESC");
     $stmt->execute();
     $row = $stmt->rowCount();
     $date = $stmt->fetch(PDO::FETCH_ASSOC);
 
+
+    if ($_SESSION["admin"] == "s") {
+        $btnS = '<a class="btn btn-primary" href="delete_db.php?g=sdf" role="button" onclick="return confirm(\'กรุณายืนยันการลบข้อมูลนี้อีกครั้ง\')";>ลบฐานข้อมูลนักศึกษาฉบับเต็ม</a>';
+    }
     ?>
     <div class="container" style="margin-top:3rem;">
         <div class="col-md-12">
-
+            <div style="text-align:right"><?= $btnS ?></div>
 
             <h5>แบบสอบถามของนักศึกษาฉบับเต็ม</h5>
 
@@ -81,16 +95,20 @@ include '../config/connect_s.php';
         <hr>
     </div>
     <?php
-    $stmt = $conStudent_s->prepare("SELECT* FROM insert_data ORDER BY id DESC");
+    $stmt = $con->prepare("SELECT* FROM student_s ORDER BY id DESC");
     $stmt->execute();
     $row = $stmt->rowCount();
     $date = $stmt->fetch(PDO::FETCH_ASSOC);
 
+
+    if ($_SESSION["admin"] == "s") {
+        $btnS = '<a class="btn btn-primary" href="delete_db.php?g=sds" role="button" onclick="return confirm(\'กรุณายืนยันการลบข้อมูลนี้อีกครั้ง\')";>ลบฐานข้อมูลนักศึกษาฉบับย่อ</a>';
+    }
     ?>
     <div class="container" style="margin-top:3rem;">
         <div class="col-md-12">
 
-
+            <div style="text-align:right"><?= $btnS ?></div>
             <h5>แบบสอบถามของนักศึกษาฉบับย่อ</h5>
 
 

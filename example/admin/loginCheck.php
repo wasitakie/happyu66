@@ -4,7 +4,7 @@ include '../config/connect.php';
 
 
 try {
-    $admin = $conStudent->prepare("SELECT* FROM admin WHERE user = ? AND pass = ? ");
+    $admin = $con->prepare("SELECT* FROM admin WHERE user = ? AND pass = ? ");
     $admin->execute([$_POST["user"], $_POST["pass"]]);
     $row = $admin->rowCount();
     if ($row == 1) {

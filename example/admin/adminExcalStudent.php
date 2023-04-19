@@ -167,7 +167,7 @@ header('Content-Disposition: attachment; filename="' . $nameSchoolS . 'เต็
 		<?php
 		include '../config/connect.php';
 
-		$se = $conStudent->prepare("SELECT* FROM insert_data");
+		$se = $con->prepare("SELECT* FROM student_f");
 		$se->execute();
 		$n = 1;
 
