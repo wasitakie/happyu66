@@ -37,7 +37,7 @@ include '../session/sessionuser.php';
                                         1.1 ชื่อ มหาวิทยาลัย</span></label>
 
                                 <div class="form-check">
-                                    <label type="text" for="formGroupExampleInput" class="form-label">มหาวิทยาลัยราชภัฏหมู่บ้านจอมบึง </label>
+                                    <label type="text" for="formGroupExampleInput" class="form-label">มหาวิทยาลัยราชภัฏมหาสารคาม </label>
 
                                 </div>
                             </div>
@@ -55,15 +55,16 @@ include '../session/sessionuser.php';
                                         1.2 ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย) </span></label>
                                 <select class="form-select a2" name="a2" aria-label="Default select example" id="a2">
                                     <option value="0">ชื่อส่วนงาน (คณะ/สถาบัน/วิทยาลัย/ศูนย์/สำนัก)</option>
-                                    <option value="1.คณะครุศาสตร์">1. คณะครุศาสตร์</option>
-                                    <option value="2.คณะวิทยาศาสตร์และเทคโนโลยี">2. คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                                    <option value="1.คณะวิทยาศาสตร์และเทคโนโลยี">1. คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                                    <option value="2.คณะครุศาสตร์">2. คณะครุศาสตร์</option>
                                     <option value="3.คณะวิทยาการจัดการ">3. คณะวิทยาการจัดการ</option>
                                     <option value="4.คณะมนุษยศาสตร์และสังคมศาสตร์">4. คณะมนุษยศาสตร์และสังคมศาสตร์</option>
-                                    <option value="5.วิทยาลัยมวยไทยศึกษาและการแพทย์แผนไทย">5. วิทยาลัยมวยไทยศึกษาและการแพทย์แผนไทย</option>
-                                    <option value="6.คณะเทคโนโลยีอุตสาหกรรม">6. คณะเทคโนโลยีอุตสาหกรรม</option>
-                                    <option value="7.คณะพยาบาลศาสตร์">7. คณะพยาบาลศาสตร์</option>
-                                    <option value="8.คณะอื่น ๆ ในมหาวิทยาลัย">8. คณะอื่น ๆ ในมหาวิทยาลัย</option>
-
+                                    <option value="5.คณะเทคโนโลยีการเกษตร">5. คณะเทคโนโลยีการเกษตร</option>
+                                    <option value="6.คณะเทคโนโลยีสารสนเทศ">6. คณะเทคโนโลยีสารสนเทศ</option>
+                                    <option value="7.คณะรัฐศาสตร์และรัฐประศาสนศาสตร์">7. คณะรัฐศาสตร์และรัฐประศาสนศาสตร์</option>
+                                    <option value="8.คณะนิติศาสตร์">8. คณะนิติศาสตร์</option>
+                                    <option value="9.คณะวิศวกรรมศาสตร์">9. คณะวิศวกรรมศาสตร์</option>
+                                    <option value="10.คณะอื่นๆภายในมหาวิทยาลัย">10. คณะอื่นๆภายในมหาวิทยาลัย</option>
 
 
                                 </select>

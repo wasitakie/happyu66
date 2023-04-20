@@ -3,7 +3,7 @@
 $host = 'localhost';
 $username = 'root';
 $password = 'root';
-$db = 'db_happy';
+$db = 'db_happy_rmu';
 
 
 date_default_timezone_set('Asia/Bangkok');
