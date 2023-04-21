@@ -1,9 +1,9 @@
 <?php
 
 $host = 'localhost';
-$username = 'root';
-$password = 'root';
-$db = 'db_happy_npru';
+$username = 'admin_npru';
+$password = 'ipsr5692';
+$db = 'admin_npru';
 
 
 date_default_timezone_set('Asia/Bangkok');

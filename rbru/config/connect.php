@@ -1,9 +1,9 @@
 <?php
 
 $host = 'localhost';
-$username = 'root';
-$password = 'root';
-$db = 'db_happy_rbru';
+$username = 'admin_rbru';
+$password = 'ipsr5692';
+$db = 'admin_rbru';
 
 
 date_default_timezone_set('Asia/Bangkok');

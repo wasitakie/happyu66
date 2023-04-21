@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../config/connect.php';
-include '../config/connect_s.php';
+
 
 if ($_GET["g"] == "sf") {
     $f = $con->prepare("DELETE FROM staff_f WHERE idcode <> ?  ");

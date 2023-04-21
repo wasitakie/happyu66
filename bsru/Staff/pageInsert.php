@@ -1,7 +1,10 @@
 <?php
+
 session_start();
 include '../config/connect.php';
 // 29//
+
+
 
 if ($_POST["a3"] == 1) {
     $a4 = $_POST["a4"];
@@ -29,8 +32,8 @@ $_SESSION["page_part1"] = $page_part1;
 
 
 
-// foreach ($_SESSION["page1_array"] as $page1) {
-//     echo $page1 . "<br>";
-// }
+// // foreach ($_SESSION["page1_array"] as $page1) {
+// //     echo $page1 . "<br>";
+// // }
 header("Location: page1.php");
-//header("Location: insertData.php");
+// //header("Location: insertData.php");

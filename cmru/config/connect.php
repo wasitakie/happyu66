@@ -1,9 +1,9 @@
 <?php
 
 $host = 'localhost';
-$username = 'root';
-$password = 'root';
-$db = 'db_happy_cmru';
+$username = 'admin_cmru';
+$password = 'ipsr5692';
+$db = 'admin_cmru';
 
 
 date_default_timezone_set('Asia/Bangkok');
