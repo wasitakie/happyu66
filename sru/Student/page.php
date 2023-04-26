@@ -37,7 +37,7 @@ include '../session/sessionuser.php';
                                 <label type="text" for="formGroupExampleInput" class="form-label"><span class="textQ">
                                         1.1 ชื่อ มหาวิทยาลัย</span></label>
                                 <div class="form-check">
-                                    <label type="text" for="formGroupExampleInput" class="form-label"> มหาวิทยาลัยราชภัฏอุตรดิตถ์</label>
+                                    <label type="text" for="formGroupExampleInput" class="form-label"> มหาวิทยาลัยราชภัฏสุราษฎรานี</label>
 
                                 </div>
 
